@@ -4,6 +4,21 @@
 	<title>온라인 프로필</title>
 	<meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        table{
+            width: 70%;
+            border: 1px solid #222;
+            border-collapse: collapse;
+        }
+        thead{
+            border: 1px solid rgba(31, 226, 177, 0.63);
+        }
+        th,td{
+            border: 1px solid slategray;
+            padding: 5px;
+            font-size: 0.8em;
+        }
+    </style>
 </head>
 
 <body>
@@ -57,7 +72,31 @@
             <!-- 학력 -->
             <section>
                 <h2 class="subtitle">Education</h2>
-
+                <table>
+                    <caption>학력사항</caption>
+                    <thead>
+                        <tr>
+                            <th>출신학교</th>
+                            <th>전공</th>
+                            <th>기간</th>
+                            <th>구분</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>대구대학교</td>
+                            <td>컴퓨터공학</td>
+                            <td>2004.03-2008.02</td>
+                            <td>졸업</td>
+                        </tr>
+                        <tr>
+                            <td>ㅇㅇ고등학교</td>
+                            <td>문과</td>
+                            <td>2001.03-2004.02</td>
+                            <td>졸업</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
         </div>        
     </div>
