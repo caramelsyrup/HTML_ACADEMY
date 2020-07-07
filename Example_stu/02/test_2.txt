@@ -1,0 +1,9 @@
+로컬 스토리지(Local Storage)를 저장하는 함수
+로컬 스토리지(Local Storage)를 저장하는 함수 : 
+
+     function savetheLocal(){
+          var second = document.getElementById("second");
+          var thevalue = second.value;
+          localStorage.setItem(1, thevalue);
+          gettheLocal();
+     }    
