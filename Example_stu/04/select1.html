@@ -31,6 +31,64 @@
 	 </style>
   </head>
   <body>
-  
+	  <h1>여름방학 특강 신청</h1>
+	 <form> 
+		<fieldset>
+			<legend>수강 신청서</legend>
+			<ul >
+				<li>
+					<label class="reg" for="studentNum">학번</label>
+					<input type="text" name="studentNum" id="studentNum" autofocus>
+				</li>
+				<li><label class="reg" for="studentName">이름</label>
+					<input type="text" name="studentName" id="studentName"></li>
+				<li><label for="major" class="reg">학과</label>
+					<select id="major">
+						<optgroup label="공과대학">
+							<option value="machine">기계공학</option>
+							<option value="chemical"">화학공학</option>
+							<option value="electronic">전자공학</option>
+							<option value="computer" selected>컴퓨터공학</option>
+						</optgroup>
+						<optgroup label="상과대학">
+							<option value="economics">경제학과</option>
+							<option value="management"">경영학과</option>
+							<option value="trade">무역학과</option>
+							<option value="financial"">금융학과</option>
+						</optgroup>
+						<optgroup label="인문대학">
+							<option value="history">역사학과</option>
+							<option value="language">어문학과</option>
+							<option value="philo">철학과</option>
+						</optgroup>
+					</select>
+				</li>
+				<li>
+					<label for="interest" class="reg">상세</label>
+					<input type="text" id="interest" list="choice">
+					<datalist id="choice">
+						<option value="grammar" label="문법"></option>
+						<option value="voca" label="어휘"></option>
+						<option value="dialog"" label="회화"></option>
+					</datalist>
+				</li>
+			</ul>
+		</fieldset>
+		<fieldset>
+			<legend>영어교육과목</legend>
+			<ul>
+				<li>
+					<label for="lec" class="reg">강의명</label>
+					<input type="text" id="lec" list="lectures">
+					<datalist id="lectures">
+						<option value="TOEIC"" label="토익"></option>
+						<option value="TOEFL" label="토플"></option>
+						<option value="DIALOG" label="회화"></option>
+						<option value="SAT" label="SAT"></option>
+					</datalist>
+				</li>
+			</ul>
+		</fieldset>
+	</form>
   </body>
 </html>

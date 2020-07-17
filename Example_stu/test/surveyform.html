@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>설문지</title>
+</head>
+<body>
+    <h1>설문지</h1>
+    <p>소프트웨어 기술에 대한 의견을 듣습니다. 많은 참여 부탁드립니다.</p>
+    <hr>
+    <table>
+        <tr>
+            <td>학년</td>
+            <td>
+                <input type="radio" name="grade" id="grade" value="1st" checked >1학년
+                <input type="radio" name="grade" id="grade" value="2nd" >2학년
+                <input type="radio" name="grade" id="grade" value="3rd" >3학년
+                <input type="radio" name="grade" id="grade" value="4th" >4학년
+            </td>
+        </tr>
+        <tr>
+            <td>성별</td>
+            <td>
+                <input type="radio" name="gender" id="gender" value="man" >남
+                <input type="radio" name="gender" id="gender" value="woman" >여
+            </td>
+        </tr>
+        <tr>
+            <td>관심 분야</td>
+            <td>
+                <select>
+                    <option id="fields" value="mobileSoft" selected>모바일 소프트웨어</option>
+                    <option id="fields" value="web">웹 소프트웨어</option>
+                    <option id="fields" value="hard">하드웨어</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>진로</td>
+            <td>
+                <input type="checkbox" id="career" value="develop" checked>개발
+                <input type="checkbox" id="career" value="design">기획
+                <input type="checkbox" id="career" value="marketing">영업
+                <input type="checkbox" id="career" value="business">창업
+            </td>
+        </tr>
+        <tr>
+            <td>남기고 싶은 말</td>
+            <td>
+                <textarea id="words" placeholder="글을 남겨주세요" style="width: 400px; height: 100px;"></textarea>
+            </td>
+        </tr>
+    </table>
+    <h4>Copyright 2020 by Kitae</h4>
+</body>
+</html>
