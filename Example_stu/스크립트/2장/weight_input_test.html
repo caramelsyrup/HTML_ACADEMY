@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> 적정 몸무게 구하기 </title>
+<script>
+    var name = prompt("이름은?",0);
+    var userHeight = prompt("신장은?",0);
+    var userWeight = prompt("체중은?",0);
+
+    var result = (((userHeight-100)*0.9)-5)<=userWeight && 
+                 (((userHeight-100)*0.9)+5)>=userWeight? "정상체중" : "비만";
+    
+    document.write(name+" : "+result);
+</script>
+</head>
+<body>
+</body>
+</html>

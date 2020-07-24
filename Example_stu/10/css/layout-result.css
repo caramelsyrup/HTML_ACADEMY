@@ -1,1 +1,74 @@
-﻿
+﻿body{
+    font-family: "맑은 고딕","고딕","굴림";
+}
+
+header{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: skyblue;
+    padding: 10px;
+    overflow: hidden;
+}
+header nav{
+    width: 60%;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline;
+    margin: 20px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+header nav ul li a:hover{
+    color: yellow;
+}
+
+article{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 5px solid gray;
+    padding: 5px;
+    overflow: hidden;
+}
+
+article section{
+    width: 30%;
+    height: 650px;
+    float: left;
+    margin: 5px;
+    padding: 5px;
+    border: 1px dotted black;
+}
+section h3{
+    background: url(/10/images/bg-note.png) no-repeat left center;
+    padding-left: 30px;
+}
+
+aside{
+    clear: both;
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    background-color: yellow;
+}
+footer{
+    clear: both;
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    background-color: seagreen;
+    color: aliceblue;
+    text-align: center;
+}
