@@ -4,8 +4,12 @@
 <meta charset="UTF-8">
 <title> if문 </title>
 <script>
-	var userName = prompt("방문자의 이름은?", "");
+	var userName = prompt("영문 이름 입력 : ", "");
+	document.write(userName.toUpperCase(),"<br>");
 
+	var tel = prompt("방문자의 전화번호는?", ""); //뒤에서부터 4글자를 ****로 대신,,
+	var result = tel.substring(0,tel.length-4)+"****"; //substring(n,m) n번째부터 m번째까지 출력
+	document.write(result,"<br>");
 </script>
 </head>
 <body>

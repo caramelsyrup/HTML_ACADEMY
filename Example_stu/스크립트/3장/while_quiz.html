@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .blue{
+            color:blue;
+        }
+        .red{
+            color:red;
+        }
+    </style>
+  
+</head>
+<body>
+    <script>
+        var i = 20;
+        while(i>=10){
+           if(i%2==0){             // 태그와 변수 연결 , 클래스명은 ''로
+                document.write("<p class='blue'>" + i+"<p>"); //p태그
+                i--;
+        }else{
+            document.write("<p class='red'>"+i+"<p>");
+            i--;
+        }
+        
+    }  
+    </script>
+</body>
+</html>

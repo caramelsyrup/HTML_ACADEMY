@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset = "UTF-8">
+<title> 수학객체 </title>
+<style>
+
+	.p1{
+		text-align: center;
+		color:blue;
+	}
+	.p2{
+		text-align: center;
+		color:green;
+	}
+</style>
+<script>
+	document.write("<h1><컴퓨터 가위, 바위, 보 맞추기></h1>");
+	var game=prompt("가위,바위,보 중에 선택","가위"); //prompt(text, 기본으로적히는값)
+	var gameNum;
+	switch(game){
+		case "가위" : gameNum=1; break;
+		case "바위" :  gameNum=2; break;
+		case "보" :  gameNum=3; break;
+		default : alert("잘못 입력");
+		location.reload();	
+		
+	}
+	
+	var com = Math.ceil(Math.random()*3); //1~3까지 난수 발생 
+
+		document.write("<img src=\"images/math_img_"+com+".jpg\">"); //img src에는 확장자도 !!
+	
+		if(com==1){//컴퓨터가 가위를
+			if(game=="가위"){ 			
+				document.write("<img src=\"images/math_img_1.jpg\">");
+				document.write("<p class='p1'>"+"비겼습니다."+"</p>");
+			}else if(game=="바위"){
+				document.write("<img src=\"images/math_img_2.jpg\">");
+				document.write("<p class='p2'>"+"USER가 이겼습니다."+"</p>");
+			}else {
+				document.write("<img src=\"images/math_img_3.jpg\">");
+				document.write("컴퓨터가 이겼습니다.");
+			}	
+		}
+	
+		if(com==2){ //컴퓨터가 바위를
+			 if(game=="가위"){
+				document.write("<img src=\"images/math_img_1.jpg\">");
+				document.write("컴퓨터가 이겼습니다.");
+			
+			}else if(game=="바위"){
+				document.write("<img src=\"images/math_img_2.jpg\">");
+				document.write("<p class='p1'>"+"비겼습니다."+"</p>");
+			}else {
+				document.write("<img src=\"images/math_img_3.jpg\">");
+				document.write("USER가 이겼습니다.");
+				
+			}	
+		}
+			
+		if(com==3){ //컴퓨터가 빠를
+			if(game=="가위"){
+				document.write("<img src=\"images/math_img_1.jpg\">");
+				document.write("USER가 이겼습니다.");
+			}else if(game=="바위"){
+				document.write("<img src=\"images/math_img_2.jpg\">");
+				document.write("컴퓨터가 이겼습니다.");
+			}else {
+				document.write("<img src=\"images/math_img_3.jpg\">");
+				document.write("<p class='p1'>"+"비겼습니다."+"</p>");
+			}
+			
+		}
+	
+			
+
+
+</script>
+</head>
+<body>
+	
+</body>
+</html>

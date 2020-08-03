@@ -4,7 +4,13 @@
 <meta charset="UTF-8">
 <title> else문 </title>
 <script>
+    var result=confirm("정말 탈퇴를 하시겠습니까?");
 
+    if(result){
+        document.write("탈퇴 처리 완료");
+    }else{
+        document.write("탈퇴 취소");
+    }
 </script>
 </head>
 <body>

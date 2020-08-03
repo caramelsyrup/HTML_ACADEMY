@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset = "UTF-8">
+<title> 문자 객체 </title>
+<script>  	// &nbsp : 스페이스 한 칸
+	var str = "Hello Thank you good luck to you";
+	document.write(str.charAt(16),"<br>"); // charAt : 16번째 문자 데려왓
+											//charAt : 공백도 한 글자로
+	document.write(str.match("luck"),"<br>");
+	document.write(str.replace("you","me"),"<br>");
+	document.write(str.toUpperCase(),"<br>"); //toUpperCase : 한글에는 해당x
+	document.write(str.toLowerCase(),"<br>");
+	var t=str.split(" "); //공백 단위로 배열을 만들고, 순위를 매기겠다
+	document.write(t[0]); //t의 0번째 글자값 출력 : Hello
+
+</script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var num=1;
+        var t="<table border=1>";      
+            for(var i=1;i<=5;i++){ //행
+              t+="<tr>";
+                for(j=1;j<=5;j++){ //열
+                    t+="<td>"+num+"</td>";
+                    num++;
+                }
+                t+="</tr>";
+            }
+            t+="</table>";
+            document.write(t);
+     
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
