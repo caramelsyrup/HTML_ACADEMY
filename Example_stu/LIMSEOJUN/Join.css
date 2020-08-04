@@ -1,0 +1,55 @@
+
+    #container{
+        width: 600px;
+        margin: 30px auto;
+        padding: 30px;
+    }
+    h1{
+        margin-left: 50px;
+    }
+    fieldset{
+        width: 710px;
+        margin-left: 50px;
+    }
+    legend{
+        font-size: 1.3em;
+    }
+    ul{
+        list-style: none;
+    }
+    ul li{
+        clear: both;
+        padding-left: 20px;
+    }
+    .field{
+        float: left;
+        width: 150px;
+        font-size: 1.2em;
+        line-height: 40px;
+        text-align: right;
+        margin-right: 10px;
+        padding-right: 2px;
+    }
+    input[type="text"],input[type="email"],input[type="password"],input[type="url"]{
+        float: left;
+        width: 350px;
+        height: 15px;
+        border: 1px solid #aaa;
+        border-radius: 1px;
+        padding: 5px;
+        margin: 10px 0;
+    }
+    #buttons{
+        margin-left: -10px;
+    }
+    #buttons>li{
+        display: inline-block;
+    }
+    button{
+        width: 350px;
+        height: 50px;
+        border: 1px solid #ccc;
+        background: #eee;
+        font-size: 0.9em;
+        border-radius: 3px;
+    }

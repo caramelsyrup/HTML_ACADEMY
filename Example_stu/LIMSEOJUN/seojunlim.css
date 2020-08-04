@@ -1,0 +1,101 @@
+    *{
+        font-family: "맑은 고딕","고딕";
+    }
+    #wrapp{
+        border: 1px solid rgba(22, 75, 59, 0.795);
+        margin: 0 auto;
+        position: relative;
+        width: 960px;
+        margin: 0 auto;
+        background-color: white;
+    }
+    header{
+        position: relative;
+        width: 100%;
+        height: 200px;
+        background-color: darkslategray;
+    }
+    #photo{
+        position: absolute;
+        margin: 25px 50px;
+        width: 150px;
+    }
+    #ice{
+        position: absolute;
+        width: 150px;
+        border-radius: 15px;
+        margin-top: 60px;
+        margin-left: 750px;
+    }
+    #header-text{
+        position: absolute;
+        font-size: 32px;
+        color: white;
+        margin-left: 250px;
+    }
+    header h3{
+        position: absolute;
+        color: white;
+        margin-left: 280px;
+        margin-top: 100px;
+    }
+    .navi{
+	position:relative;
+    background-color: teal;
+    border: 1px solid teal;
+	widows: 100%;
+    height:40px;
+    padding-bottom: 20px;
+    }
+    .navi ul{
+        list-style: none; 
+        height:1px;
+    }
+    .navi ul li {
+        display:inline-block;
+        font-size: 1.0em;
+    }
+    .navi a, .navi a:visited {
+        padding: 5px 35px 5px 5px;
+        display: inline;
+        color:#fff;
+        text-decoration: none;
+    }
+    h2{
+        background-color: darkslategray;
+        height: 45px;
+        color: white;
+        text-align: center;
+        margin-top: 5px;
+        padding-top: 10px;
+    }
+    section{
+        float: left;
+        width: 900px;
+        margin-left: 30px;
+        padding: 5px;
+    }
+    section article{
+        float: left;
+        width: 380px;
+        height: 220px;
+        margin: 15px;
+        padding: 15px;
+        border: 1px dotted rgb(100, 100, 100);
+    }
+    section article ul{
+        list-style-type: none;
+    }
+    section article ul li span {
+        font-style: italic;
+    }
+    .Who, .Experience, .Skills, .Education{
+        border: 1px solid teal;
+    }
+    footer {
+        padding: 10px 0;
+        background-color:#ccc;
+        color:black;
+        padding-left: 50px;
+        clear: both;
+    }

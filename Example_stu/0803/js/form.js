@@ -14,8 +14,8 @@ function checkid(){
 }
 
 function checkpw(){
-    if(pw1.value.length!=8){
-        alert("8자리로 설정하세요.");
+    if(pw1.value.length<8){
+        alert("8자리이상 설정하세요.");
         pw1.value=" ";
         pw1.focus();
     }

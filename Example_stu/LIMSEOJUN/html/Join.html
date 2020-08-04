@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원 가입</title>
+    <link rel="stylesheet" href="css/Join.css">
+</head>
+<body>
+    <div class="container">
+        <form action="#" method="POST" id="register">
+        <h1>회원 가입</h1>
+        <fieldset>
+            <legend>로그인 정보</legend>
+                <ul id="user-info">
+                    <li>
+                        <label for="user-id" class="field">아이디</label>
+                        <input type="text" id="user-id" placeholder="4~8글자 입력" required onchange="checkid()">
+                    </li>
+                    <li>
+                        <label for="user-pw1" class="field">비밀번호</label>
+                        <input type="password" id="user-pw1" placeholder="8자 이상" required onchange="checkpw()">
+                    </li>
+                    <li>
+                        <label for="user-pw2" class="field">비밀번호 확인</label>
+                        <input type="password" id="user-pw2" required onchange="comparepw()">
+                    </li>
+                </ul>    
+        </fieldset>
+        <fieldset>
+            <legend>개인 정보</legend>
+            <ul>
+                <li>
+                    <label for="user-name" class="field">이름</label>
+                    <input type="text" id="user-name">
+                </li>
+                <li>
+                    <label for="user-email" class="field">메일 주소</label>
+                    <input type="email" id="user-email">
+                </li>
+                <li>
+                    <label for="user-phone" class="field">연락처</label>
+                    <input type="text" id="user-phone">
+                </li>
+                <li>
+                    <label for="blog" class="field">블로그/홈페이지</label>
+                    <input type="url" id="blog">
+                </li>
+            </ul>
+        </fieldset> 
+        <ul id="buttons">
+            <li>
+                <button type="submit" class="btn btnBlack">가입하기</button>
+            </li>
+            <li>
+                <button type="reset" class="btn btnGray">취소하기</button>
+            </li>
+        </ul>
+        </form>
+    </div>
+    <script src="js/Join.js"></script>
+</body>
+</html>
